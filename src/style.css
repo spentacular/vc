@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #303841;
+  color: rgba(255,255,255,.85);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+ul li {
+  display: inline-block;
+  margin: .25rem;
+}
+
+ul li a {
+  display: block;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon a {
+  fill: rgba(255,255,255,.85);
+  transition: all .15s ease-in;
+}
+
+.wrap {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (max-width: 30em) {
+  .wrap {
+    height: 90vh;
+  }
+}
+
+.twitter:hover { fill: #55acee; }
+.dribbble:hover { fill: #ea4c89; }
+.github:hover { fill: #4183c4; }
+.instagram:hover { fill: #5851db; }
+
+.social {
+  animation-name: fade;
+  animation-duration: .25s;
+  animation-fill-mode: both;
+  animation-delay: 1.2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
