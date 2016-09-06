@@ -1,5 +1,4 @@
 const gulp = require('gulp')
-const babel = require('gulp-babel')
 const fileinclude = require('gulp-file-include')
 const autoprefixer = require('gulp-autoprefixer')
 const browserify = require('browserify')
