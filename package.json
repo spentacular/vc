@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "start": "gulp watch",
+    "start": "gulp",
+    "dev": "gulp watch",
     "deploy": "surge --domain plain-change.surge.sh --project ./dist/"
   },
   "keywords": [],
